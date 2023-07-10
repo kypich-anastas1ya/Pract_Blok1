@@ -11,7 +11,7 @@ int factorial(int n) {
 
 // Function to count the number of anagrams for a given word
 int countAnagrams(char word[]) {
-    int count[26] = {0};  //An array for counting letters
+    int count[59] = {0};  //An array for counting letters
 
     int len = strlen(word);
     int totalAnagrams = factorial(len);  // Anagram counter
@@ -23,7 +23,7 @@ int countAnagrams(char word[]) {
     }
 
     // Calculate the number of anagrams based on the counts
-    for (int i = 0; i < 26; i++) {
+    for (int i = 0; i < 59; i++) {
         if (count[i] > 1) {
             totalAnagrams /= factorial(count[i]);
         }
